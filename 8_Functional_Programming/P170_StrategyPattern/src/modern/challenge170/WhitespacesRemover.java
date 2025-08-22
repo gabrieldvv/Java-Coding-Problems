@@ -1,4 +1,4 @@
-package modern.challenge;
+package modern.challenge170;
 
 public class WhitespacesRemover implements RemoveStrategy {
 

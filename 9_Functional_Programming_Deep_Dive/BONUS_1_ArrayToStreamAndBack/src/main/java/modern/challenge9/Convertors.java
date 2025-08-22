@@ -1,4 +1,4 @@
-package modern.challenge;
+package modern.challenge9;
 
 import java.util.Arrays;
 import java.util.stream.IntStream;

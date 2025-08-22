@@ -1,4 +1,4 @@
-package modern.challenge;
+package modern.challenge169;
 
 @FunctionalInterface
 public interface TriFunction<T, U, V, R> {

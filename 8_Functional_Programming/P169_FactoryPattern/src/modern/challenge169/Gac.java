@@ -1,4 +1,4 @@
-package modern.challenge;
+package modern.challenge169;
 
 public class Gac implements Fruit {
 }

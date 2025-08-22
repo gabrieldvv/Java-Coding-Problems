@@ -1,5 +1,7 @@
 package modern.challenge;
 
+import modern.challenge.Melon;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,14 +27,14 @@ public final class Filters {
         return result;
     }
 
-    public static List<Melon> filterMelons(List<Melon> melons, MelonPredicate predicate) {
+    public static List<modern.challenge.Melon> filterMelons(List<modern.challenge.Melon> melons, MelonPredicate predicate) {
 
         if (melons == null) {
             throw new IllegalArgumentException("Melon cannot be null");
         }
 
-        List<Melon> result = new ArrayList<>();
-        for (Melon melon : melons) {
+        List<modern.challenge.Melon> result = new ArrayList<>();
+        for (modern.challenge.Melon melon : melons) {
             if (melon != null && predicate.test(melon)) {
                 result.add(melon);
             }
@@ -41,7 +43,7 @@ public final class Filters {
         return result;
     }
 
-    public static List<Melon> filterByType(List<Melon> melons, String type) {
+    public static List<modern.challenge.Melon> filterByType(List<modern.challenge.Melon> melons, String type) {
 
         if (melons == null || type == null) {
             throw new IllegalArgumentException("Melons/type cannot be null");
@@ -51,8 +53,8 @@ public final class Filters {
             return melons;
         }
 
-        List<Melon> result = new ArrayList<>();
-        for (Melon melon : melons) {
+        List<modern.challenge.Melon> result = new ArrayList<>();
+        for (modern.challenge.Melon melon : melons) {
             if (melon != null && type.equalsIgnoreCase(melon.getType())) {
                 result.add(melon);
             }
@@ -61,7 +63,7 @@ public final class Filters {
         return result;
     }
 
-    public static List<Melon> filterByWeight(List<Melon> melons, int weight) {
+    public static List<modern.challenge.Melon> filterByWeight(List<modern.challenge.Melon> melons, int weight) {
 
         if (melons == null) {
             throw new IllegalArgumentException("Melons cannot be null");
@@ -71,8 +73,8 @@ public final class Filters {
             return melons;
         }
 
-        List<Melon> result = new ArrayList<>();
-        for (Melon melon : melons) {
+        List<modern.challenge.Melon> result = new ArrayList<>();
+        for (modern.challenge.Melon melon : melons) {
             if (melon != null && melon.getWeight() == weight) {
                 result.add(melon);
             }
@@ -81,7 +83,7 @@ public final class Filters {
         return result;
     }
 
-    public static List<Melon> filterByTypeAndWeight(List<Melon> melons, String type, int weight) {
+    public static List<modern.challenge.Melon> filterByTypeAndWeight(List<modern.challenge.Melon> melons, String type, int weight) {
 
         if (melons == null || type == null) {
             throw new IllegalArgumentException("Melons/type cannot be null");
@@ -91,7 +93,7 @@ public final class Filters {
             return melons;
         }
 
-        List<Melon> result = new ArrayList<>();
+        List<modern.challenge.Melon> result = new ArrayList<>();
         for (Melon melon : melons) {
             if (melon != null && type.equalsIgnoreCase(melon.getType())
                     && melon.getWeight() == weight) {

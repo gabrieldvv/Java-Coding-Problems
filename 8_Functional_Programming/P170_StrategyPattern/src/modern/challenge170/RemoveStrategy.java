@@ -1,4 +1,4 @@
-package modern.challenge;
+package modern.challenge170;
 
 @FunctionalInterface
 public interface RemoveStrategy {

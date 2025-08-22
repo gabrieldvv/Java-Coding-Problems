@@ -1,4 +1,4 @@
-package modern.challenge;
+package modern.challenge174;
 
 import java.util.function.Function;
 import java.util.stream.Stream;

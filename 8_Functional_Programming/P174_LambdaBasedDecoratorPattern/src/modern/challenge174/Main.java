@@ -1,4 +1,4 @@
-package modern.challenge;
+package modern.challenge174;
 
 public class Main {
 
